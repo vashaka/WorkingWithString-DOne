@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace WorkingWithStrings
 {
@@ -21,9 +20,7 @@ namespace WorkingWithStrings
         {
             // TODO #6-1. Analyze unit tests for the method, and add the method implementation.
             // Use String.Join method: https://docs.microsoft.com/en-us/dotnet/api/system.string.join
-            string newString = string.Join(':', values);
-
-            return newString;
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -33,9 +30,7 @@ namespace WorkingWithStrings
         {
             // TODO #6-2. Analyze unit tests for the method, and add the method implementation.
             // Use String.Join method: https://docs.microsoft.com/en-us/dotnet/api/system.string.join
-            string commaSeparatedString = string.Join(',', values[1..]);
-
-            return commaSeparatedString;
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -45,10 +40,7 @@ namespace WorkingWithStrings
         {
             // TODO #6-3. Analyze unit tests for the method, and add the method implementation.
             // Use String.Join method: https://docs.microsoft.com/en-us/dotnet/api/system.string.join
-            int lastIndex = values.Length - 1;
-            string newStr = string.Join('-', values[1..lastIndex]);
-
-            return newStr;
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -58,7 +50,7 @@ namespace WorkingWithStrings
         {
             // TODO #6-4. Analyze unit tests for the method, and add the method implementation.
             // Use String.Join method: https://docs.microsoft.com/en-us/dotnet/api/system.string.join
-            return string.Join('+', values);
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -68,7 +60,7 @@ namespace WorkingWithStrings
         {
             // TODO #6-5. Analyze unit tests for the method, and add the method implementation.
             // Use String.Join method: https://docs.microsoft.com/en-us/dotnet/api/system.string.join
-            return string.Join('\\', values);
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -78,7 +70,7 @@ namespace WorkingWithStrings
         {
             // TODO #6-6. Analyze unit tests for the method, and add the method implementation.
             // Use String.Join method: https://docs.microsoft.com/en-us/dotnet/api/system.string.join
-            return new string(string.Join("], [", values));
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -88,9 +80,7 @@ namespace WorkingWithStrings
         {
             // TODO #6-7. Analyze unit tests for the method, and add the method implementation.
             // Use String.Join method: https://docs.microsoft.com/en-us/dotnet/api/system.string.join
-
-            int index = values.Length - 3;
-            return string.Join(separator, values[index..]);
+            throw new NotImplementedException();
         }
     }
 }

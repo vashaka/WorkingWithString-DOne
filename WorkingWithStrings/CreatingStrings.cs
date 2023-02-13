@@ -19,9 +19,7 @@ namespace WorkingWithStrings
         {
             // TODO #2-1. Implement the method using String(Char, Int32) constructor
             // See the constructor documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.string.-ctor#System_String__ctor_System_Char_System_Int32_
-            string str = new string(c, count);
-
-            return str;
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -31,7 +29,7 @@ namespace WorkingWithStrings
         {
             // TODO #2-2. Implement the method using String(Char[]) constructor
             // See the constructor documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.string.-ctor#System_String__ctor_System_Char___
-            return new string(c);
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -41,7 +39,7 @@ namespace WorkingWithStrings
         {
             // TODO #2-3. Implement the method using String(Char[], Int32, Int32) constructor
             // See the constructor documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.string.-ctor#System_String__ctor_System_Char___System_Int32_System_Int32_
-            return new string((char[])c, startIndex, length);
+            throw new NotImplementedException();
         }
     }
 }

@@ -19,7 +19,7 @@ namespace WorkingWithStrings
         {
             // TODO #4-1. Analyze unit tests for the method, and add the method implementation.
             // Use range to get a substring: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/ranges-indexes
-            return str[1..];
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace WorkingWithStrings
         {
             // TODO #4-2. Analyze unit tests for the method, and add the method implementation.
             // Use range to get a substring: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/ranges-indexes
-            return str[2..];
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace WorkingWithStrings
         {
             // TODO #4-3. Analyze unit tests for the method, and add the method implementation.
             // Use range to get a substring: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/ranges-indexes
-            return str[3..];
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -49,8 +49,7 @@ namespace WorkingWithStrings
         {
             // TODO #4-4. Analyze unit tests for the method, and add the method implementation.
             // Use range to get a substring: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/ranges-indexes
-            int lastIndex = str.Length - 1;
-            return str[..lastIndex];
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -60,8 +59,7 @@ namespace WorkingWithStrings
         {
             // TODO #4-5. Analyze unit tests for the method, and add the method implementation.
             // Use range to get a substring: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/ranges-indexes
-            int beforeLastIndex = str.Length - 2;
-            return str[..beforeLastIndex];
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -71,8 +69,7 @@ namespace WorkingWithStrings
         {
             // TODO #4-6. Analyze unit tests for the method, and add the method implementation.
             // Use range to get a substring: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/ranges-indexes
-            int thirdFromLastIndex = str.Length - 3;
-            return str[..thirdFromLastIndex];
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -82,8 +79,7 @@ namespace WorkingWithStrings
         {
             // TODO #4-7. Analyze unit tests for the method, and add the method implementation.
             // Use range to get a substring: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/ranges-indexes
-            int lastIndex = str.Length - 1;
-            return str[1..lastIndex];
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -93,8 +89,7 @@ namespace WorkingWithStrings
         {
             // TODO #4-8. Analyze unit tests for the method, and add the method implementation.
             // Use range to get a substring: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/ranges-indexes
-            int beforeLastIndex = str.Length - 2;
-            return str[2..beforeLastIndex];
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -104,8 +99,7 @@ namespace WorkingWithStrings
         {
             // TODO #4-9. Analyze unit tests for the method, and add the method implementation.
             // Use range to get a substring: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/ranges-indexes
-            int thirdFromLastIndex = str.Length - 3;
-            return str[3..thirdFromLastIndex];
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -114,11 +108,7 @@ namespace WorkingWithStrings
         public static void GetProductionCodeDetails(string productionCode, out string regionCode, out string locationCode, out string dateCode, out string factoryCode)
         {
             // TODO #4-10. Analyze unit tests for the method, and add the method implementation.
-            regionCode = productionCode[0].ToString();
-            locationCode = productionCode[3..5].ToString();
-            dateCode = productionCode[7..10].ToString();
-            factoryCode = productionCode[12..].ToString();
-
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -127,13 +117,7 @@ namespace WorkingWithStrings
         public static void GetSerialNumberDetails(string serialNumber, out string countryCode, out string manufacturerCode, out string factoryCode, out string stationCode)
         {
             // TODO #4-11. Analyze unit tests for the method, and add the method implementation.
-            countryCode = serialNumber[^9].ToString();
-            manufacturerCode = serialNumber[^8..^6].ToString();
-            factoryCode = serialNumber[^5..^1].ToString();
-            stationCode = serialNumber[^1].ToString();
-
-
-
+            throw new NotImplementedException();
         }
     }
 }
