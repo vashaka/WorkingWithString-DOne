@@ -19,7 +19,7 @@ namespace WorkingWithStrings
         {
             // TODO #3-1. Analyze unit tests for the method, and add the method implementation.
             // Use index to access a string character: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/ranges-indexes
-            throw new NotImplementedException();
+            return str[1];
         }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace WorkingWithStrings
         {
             // TODO #3-2. Analyze unit tests for the method, and add the method implementation.
             // Use index to access a string character: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/ranges-indexes
-            throw new NotImplementedException();
+            return str[2];
         }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace WorkingWithStrings
         {
             // TODO #3-3. Analyze unit tests for the method, and add the method implementation.
             // Use index from end operator to access a string character: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/ranges-indexes
-            throw new NotImplementedException();
+            return str[str.Length - 1];
         }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace WorkingWithStrings
         {
             // TODO #3-4. Analyze unit tests for the method, and add the method implementation.
             // Use index from end operator to access a string character: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/ranges-indexes
-            throw new NotImplementedException();
+            return str[str.Length - 2];
         }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace WorkingWithStrings
         {
             // TODO #3-5. Analyze unit tests for the method, and add the method implementation.
             // Use index from end operator to access a string character: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/ranges-indexes
-            throw new NotImplementedException();
+            return str[str.Length - 3];
         }
 
         /// <summary>
@@ -69,7 +69,7 @@ namespace WorkingWithStrings
         {
             // TODO #3-6. Analyze unit tests for the method, and add the method implementation.
             // Use index to access a string character: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/ranges-indexes
-            throw new NotImplementedException();
+            return str[n - 1];
         }
 
         /// <summary>
@@ -79,7 +79,7 @@ namespace WorkingWithStrings
         {
             // TODO #3-7. Analyze unit tests for the method, and add the method implementation.
             // Use index from end operator to access a string character: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/ranges-indexes
-            throw new NotImplementedException();
+            return str[str.Length - n];
         }
 
         /// <summary>
@@ -89,7 +89,7 @@ namespace WorkingWithStrings
         {
             // TODO #3-8. Analyze unit tests for the method, and add the method implementation.
             // Use String.Length property to get a string length: https://docs.microsoft.com/en-us/dotnet/api/system.string.length
-            throw new NotImplementedException();
+            return str[str.Length - 1];
         }
 
         /// <summary>
@@ -99,7 +99,7 @@ namespace WorkingWithStrings
         {
             // TODO #3-9. Analyze unit tests for the method, and add the method implementation.
             // Use String.Length property to get a string length: https://docs.microsoft.com/en-us/dotnet/api/system.string.length
-            throw new NotImplementedException();
+            return str[str.Length - 2];
         }
 
         /// <summary>
@@ -109,7 +109,7 @@ namespace WorkingWithStrings
         {
             // TODO #3-10. Analyze unit tests for the method, and add the method implementation.
             // Use String.Length property to get a string length: https://docs.microsoft.com/en-us/dotnet/api/system.string.length
-            throw new NotImplementedException();
+            return str[str.Length - 5];
         }
 
         /// <summary>
@@ -119,7 +119,7 @@ namespace WorkingWithStrings
         {
             // TODO #3-11. Analyze unit tests for the method, and add the method implementation.
             // Use String.Length property to get a string length: https://docs.microsoft.com/en-us/dotnet/api/system.string.length
-            throw new NotImplementedException();
+            return str[str.Length - n];
         }
 
         /// <summary>
@@ -128,7 +128,12 @@ namespace WorkingWithStrings
         public static void GetSpecialCodes(string serialNumber, out char expectedCode1, out char expectedCode2, out char expectedCode3)
         {
             // TODO #3-12. Analyze unit tests for the method, and add the method implementation.
-            throw new NotImplementedException();
+
+            expectedCode1 = serialNumber[1];
+            expectedCode2 = serialNumber[^8];
+            expectedCode3 = serialNumber[^4];
+
+            
         }
     }
 }

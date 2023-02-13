@@ -20,7 +20,7 @@ namespace WorkingWithStrings
         {
             // TODO #7-1. Analyze unit tests for the method, and add the method implementation.
             // Use String.Concat method to concatenate string: https://docs.microsoft.com/en-us/dotnet/api/system.string.concat
-            throw new NotImplementedException();
+            return string.Concat(str1, str2, str3);
         }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace WorkingWithStrings
         {
             // TODO #7-2. Analyze unit tests for the method, and add the method implementation.
             // Use String.Concat method to concatenate string: https://docs.microsoft.com/en-us/dotnet/api/system.string.concat
-            throw new NotImplementedException();
+            return string.Concat(str1, str2, str3, str4);
         }
 
         /// <summary>
@@ -40,7 +40,8 @@ namespace WorkingWithStrings
         {
             // TODO #7-3. Analyze unit tests for the method, and add the method implementation.
             // Use String.Concat method to concatenate string: https://docs.microsoft.com/en-us/dotnet/api/system.string.concat
-            throw new NotImplementedException();
+            return string.Concat(strings);
+
         }
 
         /// <summary>
@@ -50,7 +51,10 @@ namespace WorkingWithStrings
         {
             // TODO #7-4. Analyze unit tests for the method, and add the method implementation.
             // Use String.Concat method to concatenate string: https://docs.microsoft.com/en-us/dotnet/api/system.string.concat
-            throw new NotImplementedException();
+            string str2 = intValue.ToString();
+            string str3 = longValue.ToString();
+
+            return string.Concat(str, str2, str3);
         }
 
         /// <summary>
@@ -60,7 +64,10 @@ namespace WorkingWithStrings
         {
             // TODO #7-5. Analyze unit tests for the method, and add the method implementation.
             // Use String.Concat method to concatenate string: https://docs.microsoft.com/en-us/dotnet/api/system.string.concat
-            throw new NotImplementedException();
+           
+
+            return string.Format("{0}{1}{2}{3}", shortValue, floatValue, boolValue, doubleValue);
+
         }
 
         /// <summary>
@@ -70,7 +77,7 @@ namespace WorkingWithStrings
         {
             // TODO #7-6. Analyze unit tests for the method, and add the method implementation.
             // Use String.Concat method to concatenate string: https://docs.microsoft.com/en-us/dotnet/api/system.string.concat
-            throw new NotImplementedException();
+            return string.Concat(values);
         }
     }
 }
