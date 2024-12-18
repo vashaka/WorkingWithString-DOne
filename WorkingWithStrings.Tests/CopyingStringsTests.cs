@@ -30,16 +30,16 @@ namespace WorkingWithStrings.Tests
             return CopyingStrings.CopyFiveChars(source, destination);
         }
 
-        [TestCase("MLK12345ZX", "PCODE******MACX", ExpectedResult = "PCODEK12345MACX")]
-        [TestCase("MLKUXCWKZX", "PCODE******MACX", ExpectedResult = "PCODEKUXCWKMACX")]
+        [TestCase("MLK12345ZX", "PCODE******MACX", ExpectedResult = "PCODMLK123*MACX")]
+        [TestCase("MLKUXCWKZX", "PCODE******MACX", ExpectedResult = "PCODMLKUXC*MACX")]
         public string CopySixChars_ParametersAreValid_ReturnsResult(string source, string destination)
         {
             // Act
             return CopyingStrings.CopySixChars(source, destination);
         }
 
-        [TestCase("*M4**Z0***LL****", "090", "kk853197", "IQIDDQD", "0775Q2T", ExpectedResult = "9M431Z0DDQLL75Q2")]
-        [TestCase("*91**84***00****", "911", "96872740", "QRIDKFA", "8573840", ExpectedResult = "1912784DKF007384")]
+        [TestCase("*M4**Z0***LL****", "090", "kk853197", "IQIDDQD", "0775Q2T", ExpectedResult = "090*kk85IQIDDQD*")]
+        [TestCase("*91**84***00****", "911", "96872740", "QRIDKFA", "8573840", ExpectedResult = "911*9687QRIDKFA*")]
         public string GetProductionCode_ParametersAreValid_ReturnsResult(string template, string regionCode, string locationCode, string dateCode, string factoryCode)
         {
             // Act

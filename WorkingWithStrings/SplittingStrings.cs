@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace WorkingWithStrings
 {
@@ -19,7 +21,7 @@ namespace WorkingWithStrings
         {
             // TODO #5-1. Analyze unit tests for the method, and add the method implementation.
             // Use String.Split method: https://docs.microsoft.com/en-us/dotnet/api/system.string.split
-            throw new NotImplementedException();
+            return str.Split(':');
         }
 
         /// <summary>
@@ -29,7 +31,7 @@ namespace WorkingWithStrings
         {
             // TODO #5-2. Analyze unit tests for the method, and add the method implementation.
             // Use String.Split method: https://docs.microsoft.com/en-us/dotnet/api/system.string.split
-            throw new NotImplementedException();
+            return str.Split(new char[] { ',' }, 2);
         }
 
         /// <summary>
@@ -39,7 +41,7 @@ namespace WorkingWithStrings
         {
             // TODO #5-3. Analyze unit tests for the method, and add the method implementation.
             // Use String.Split method: https://docs.microsoft.com/en-us/dotnet/api/system.string.split
-            throw new NotImplementedException();
+            return str.Split(new char[] { ':' }, 3);
         }
 
         /// <summary>
@@ -49,7 +51,7 @@ namespace WorkingWithStrings
         {
             // TODO #5-4. Analyze unit tests for the method, and add the method implementation.
             // Use String.Split method: https://docs.microsoft.com/en-us/dotnet/api/system.string.split
-            throw new NotImplementedException();
+            return str.Split(new char[] { '-' }, 3, StringSplitOptions.RemoveEmptyEntries);
         }
 
         /// <summary>
@@ -59,7 +61,7 @@ namespace WorkingWithStrings
         {
             // TODO #5-5. Analyze unit tests for the method, and add the method implementation.
             // Use String.Split method: https://docs.microsoft.com/en-us/dotnet/api/system.string.split
-            throw new NotImplementedException();
+            return str.Split(new char[] { ',', ':' }, 4, StringSplitOptions.RemoveEmptyEntries);
         }
 
         /// <summary>
@@ -69,7 +71,10 @@ namespace WorkingWithStrings
         {
             // TODO #5-6. Analyze unit tests for the method, and add the method implementation.
             // Use String.Split method: https://docs.microsoft.com/en-us/dotnet/api/system.string.split
-            throw new NotImplementedException();
+            return Regex.Matches(str, @"[a-zA-Z]+")
+                            .Cast<Match>()
+                            .Select(m => m.Value)
+                            .ToArray();
         }
 
         /// <summary>
@@ -79,7 +84,9 @@ namespace WorkingWithStrings
         {
             // TODO #5-7. Analyze unit tests for the method, and add the method implementation.
             // Use String.Split method: https://docs.microsoft.com/en-us/dotnet/api/system.string.split
-            throw new NotImplementedException();
+            return str.Split(',')
+              .Select(s => s.Trim())
+              .ToArray();
         }
     }
 }

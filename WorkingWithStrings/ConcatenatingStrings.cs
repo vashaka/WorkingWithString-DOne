@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace WorkingWithStrings
 {
@@ -20,7 +21,7 @@ namespace WorkingWithStrings
         {
             // TODO #7-1. Analyze unit tests for the method, and add the method implementation.
             // Use String.Concat method to concatenate string: https://docs.microsoft.com/en-us/dotnet/api/system.string.concat
-            throw new NotImplementedException();
+            return string.Concat(str1, str2, str3);
         }
 
         /// <summary>
@@ -30,7 +31,7 @@ namespace WorkingWithStrings
         {
             // TODO #7-2. Analyze unit tests for the method, and add the method implementation.
             // Use String.Concat method to concatenate string: https://docs.microsoft.com/en-us/dotnet/api/system.string.concat
-            throw new NotImplementedException();
+            return string.Concat(str1, str2, str3, str4);
         }
 
         /// <summary>
@@ -40,7 +41,7 @@ namespace WorkingWithStrings
         {
             // TODO #7-3. Analyze unit tests for the method, and add the method implementation.
             // Use String.Concat method to concatenate string: https://docs.microsoft.com/en-us/dotnet/api/system.string.concat
-            throw new NotImplementedException();
+            return string.Concat(strings);
         }
 
         /// <summary>
@@ -50,7 +51,7 @@ namespace WorkingWithStrings
         {
             // TODO #7-4. Analyze unit tests for the method, and add the method implementation.
             // Use String.Concat method to concatenate string: https://docs.microsoft.com/en-us/dotnet/api/system.string.concat
-            throw new NotImplementedException();
+            return string.Concat(str, intValue.ToString(CultureInfo.InvariantCulture), longValue.ToString(CultureInfo.InvariantCulture));
         }
 
         /// <summary>
@@ -60,7 +61,7 @@ namespace WorkingWithStrings
         {
             // TODO #7-5. Analyze unit tests for the method, and add the method implementation.
             // Use String.Concat method to concatenate string: https://docs.microsoft.com/en-us/dotnet/api/system.string.concat
-            throw new NotImplementedException();
+            return string.Concat(shortValue.ToString(CultureInfo.InvariantCulture), floatValue.ToString(CultureInfo.InvariantCulture), boolValue.ToString(), doubleValue.ToString(CultureInfo.InvariantCulture));
         }
 
         /// <summary>
@@ -70,7 +71,7 @@ namespace WorkingWithStrings
         {
             // TODO #7-6. Analyze unit tests for the method, and add the method implementation.
             // Use String.Concat method to concatenate string: https://docs.microsoft.com/en-us/dotnet/api/system.string.concat
-            throw new NotImplementedException();
+            return string.Concat(values);
         }
     }
 }

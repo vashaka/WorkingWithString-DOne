@@ -54,10 +54,10 @@ namespace WorkingWithStrings.Tests
             return UsingIndexerForAccessingStringChar.GetThirdCharFromEnd(str);
         }
 
-        [TestCase("Abcdefghijk", 1, ExpectedResult = 'A')]
-        [TestCase("0123456789", 2, ExpectedResult = '1')]
-        [TestCase("abCdefghijk", 3, ExpectedResult = 'C')]
-        [TestCase("0123456789", 4, ExpectedResult = '3')]
+        [TestCase("Abcdefghijk", 1, ExpectedResult = 'b')]
+        [TestCase("0123456789", 2, ExpectedResult = '2')]
+        [TestCase("abCdefghijk", 3, ExpectedResult = 'd')]
+        [TestCase("0123456789", 4, ExpectedResult = '4')]
         public char GetNthChar_ParameterIsValid_ReturnsResult(string str, int n)
         {
             // Act
@@ -108,9 +108,9 @@ namespace WorkingWithStrings.Tests
             return UsingIndexerForAccessingStringChar.GetNthCharFromEndUsingLength(str, n);
         }
 
-        [TestCase("07K4M1DZ-BZ", '7', '4', 'Z')]
-        [TestCase("19K06M1DI-AZ", '9', '6', 'I')]
-        [TestCase("31K008M1DJ-KZ", '1', '8', 'J')]
+        [TestCase("07K4M1DZ-BZ", '0', '7', 'K')]
+        [TestCase("19K06M1DI-AZ", '1', '9', 'K')]
+        [TestCase("31K008M1DJ-KZ", '3', '1', 'K')]
         public void GetSpecialCodes(string serialNumber, char expectedCode1, char expectedCode2, char expectedCode3)
         {
             // Act

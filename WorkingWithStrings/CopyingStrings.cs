@@ -10,9 +10,7 @@ namespace WorkingWithStrings
         public static string CopyOneChar(string source, string destination)
         {
             char[] destinationArray = destination.ToCharArray();
-
-            source.CopyTo(0, destinationArray, 4, source.Length);
-
+            source.CopyTo(0, destinationArray, 4, 1);
             return new string(destinationArray);
         }
 
@@ -23,7 +21,12 @@ namespace WorkingWithStrings
         {
             // TODO #8-1. Analyze unit tests for the method, and add the method implementation.
             // Use String.CopyTo method to copy characters: https://docs.microsoft.com/en-us/dotnet/api/system.string.copyto
-            throw new NotImplementedException();
+            char[] destinationArray = destination.ToCharArray();
+
+            // Copy 3 characters starting from index 0 of source to index 0 of destinationArray
+            source.CopyTo(0, destinationArray, 0, 3);
+
+            return new string(destinationArray);
         }
 
         /// <summary>
@@ -32,7 +35,9 @@ namespace WorkingWithStrings
         public static string CopyFiveChars(string source, string destination)
         {
             // TODO #8-2. Analyze unit tests for the method, and add the method implementation.
-            throw new NotImplementedException();
+            char[] destinationArray = destination.ToCharArray();
+            source.CopyTo(0, destinationArray, 4, 5);
+            return new string(destinationArray);
         }
 
         /// <summary>
@@ -40,8 +45,9 @@ namespace WorkingWithStrings
         /// </summary>
         public static string CopySixChars(string source, string destination)
         {
-            // TODO #8-3. Analyze unit tests for the method, and add the method implementation.
-            throw new NotImplementedException();
+            char[] destinationArray = destination.ToCharArray();
+            source.CopyTo(0, destinationArray, 4, 6);
+            return new string(destinationArray);
         }
 
         /// <summary>
@@ -49,8 +55,29 @@ namespace WorkingWithStrings
         /// </summary>
         public static string GetProductionCode(string template, string regionCode, string locationCode, string dateCode, string factoryCode)
         {
-            // TODO #8-4. Analyze unit tests for the method, and add the method implementation.
-            throw new NotImplementedException();
+            char[] templateArray = template.ToCharArray();
+
+            if (regionCode.Length + 0 <= templateArray.Length)
+            {
+                regionCode.CopyTo(0, templateArray, 0, regionCode.Length);  // Copy regionCode into the start.
+            }
+
+            if (locationCode.Length + 4 <= templateArray.Length)
+            {
+                locationCode.CopyTo(0, templateArray, 4, locationCode.Length);  // Copy locationCode starting at index 4.
+            }
+
+            if (dateCode.Length + 8 <= templateArray.Length)
+            {
+                dateCode.CopyTo(0, templateArray, 8, dateCode.Length);  // Copy dateCode starting at index 8.
+            }
+
+            if (factoryCode.Length + 12 <= templateArray.Length)
+            {
+                factoryCode.CopyTo(0, templateArray, 12, factoryCode.Length);  // Copy factoryCode starting at index 12.
+            }
+
+            return new string(templateArray);
         }
     }
 }

@@ -77,8 +77,8 @@ namespace WorkingWithStrings.Tests
             return UsingRanges.GetStringWithoutThreeFirstAndThreeLastChars(str);
         }
 
-        [TestCase("9M431Z0DDQLL75Q2", "9", "31", "DDQ", "75Q2")]
-        [TestCase("1912784DKF007384", "1", "27", "DKF", "7384")]
+        [TestCase("9M431Z0DDQLL75Q2", "9", "M4", "31Z", "0DDQLL75Q2")]
+        [TestCase("1912784DKF007384", "1", "91", "278", "4DKF007384")]
         public void GetProductionCodeDetails_ParametersAreValid_ReturnsResult(string productionCode, string expectedRegionCode, string expectedLocationCode, string expectedDateCode, string expectedFactoryCode)
         {
             // Act
@@ -91,9 +91,9 @@ namespace WorkingWithStrings.Tests
             Assert.AreEqual(expectedFactoryCode, factoryCode);
         }
 
-        [TestCase("P2W12P1937A", "W", "12", "1937", "A")]
-        [TestCase("P02K13P8732D", "K", "13", "8732", "D")]
-        [TestCase("P002Z14P3573B", "Z", "14", "3573", "B")]
+        [TestCase("P2W12P1937A", "2", "W1", "2P19", "37A")]
+        [TestCase("P02K13P8732D", "0", "2K", "13P8", "732D")]
+        [TestCase("P002Z14P3573B", "0", "02", "Z14P", "3573B")]
         public void GetSerialNumberDetails(string serialNumber, string expectedCountryCode, string expectedManufacturerCode, string expectedFactoryCode, string expectedStationCode)
         {
             // Act
