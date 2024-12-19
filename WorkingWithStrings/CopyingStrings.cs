@@ -22,10 +22,7 @@ namespace WorkingWithStrings
             // TODO #8-1. Analyze unit tests for the method, and add the method implementation.
             // Use String.CopyTo method to copy characters: https://docs.microsoft.com/en-us/dotnet/api/system.string.copyto
             char[] destinationArray = destination.ToCharArray();
-
-            // Copy 3 characters starting from index 0 of source to index 0 of destinationArray
             source.CopyTo(0, destinationArray, 0, 3);
-
             return new string(destinationArray);
         }
 
@@ -59,22 +56,22 @@ namespace WorkingWithStrings
 
             if (regionCode.Length + 0 <= templateArray.Length)
             {
-                regionCode.CopyTo(0, templateArray, 0, regionCode.Length);  // Copy regionCode into the start.
+                regionCode.CopyTo(0, templateArray, 0, regionCode.Length);
             }
 
             if (locationCode.Length + 4 <= templateArray.Length)
             {
-                locationCode.CopyTo(0, templateArray, 4, locationCode.Length);  // Copy locationCode starting at index 4.
+                locationCode.CopyTo(0, templateArray, 4, locationCode.Length);
             }
 
             if (dateCode.Length + 8 <= templateArray.Length)
             {
-                dateCode.CopyTo(0, templateArray, 8, dateCode.Length);  // Copy dateCode starting at index 8.
+                dateCode.CopyTo(0, templateArray, 8, dateCode.Length);
             }
 
             if (factoryCode.Length + 12 <= templateArray.Length)
             {
-                factoryCode.CopyTo(0, templateArray, 12, factoryCode.Length);  // Copy factoryCode starting at index 12.
+                factoryCode.CopyTo(0, templateArray, 12, factoryCode.Length);
             }
 
             return new string(templateArray);
